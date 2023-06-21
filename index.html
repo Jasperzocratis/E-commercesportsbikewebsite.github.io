@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <link rel="icon" type="image/png" href="darkmotologo.png">
+  <title>Dark Moto</title>
+</head>
+<body>
+  <header class="header">
+    <a href="file:///C:/Users/ADMIN/Documents/HTML/My%20First%20Ecommerce%20Website/index.html" class="logo"><span>Dark</span>Moto</a>
+    <navbar class="navbar">
+      <a href="file:///C:/Users/ADMIN/Documents/HTML/My%20First%20Ecommerce%20Website/index.html">Home</a>
+      <a href="file:///C:/Users/ADMIN/Documents/HTML/My%20First%20Ecommerce%20Website/bikes.html">Bikes</a>
+      <a href="file:///C:/Users/ADMIN/Documents/HTML/My%20First%20Ecommerce%20Website/Service.html">Service</a>
+      <a href="file:///C:/Users/ADMIN/Documents/HTML/My%20First%20Ecommerce%20Website/Featured.html">Featured</a>
+      <a href="file:///C:/Users/ADMIN/Documents/HTML/My%20First%20Ecommerce%20Website/Review.html#">Review</a>
+    </navbar>
+  </header>
+  
+
+  <div class="home" id="home">
+    <div class="overlay">
+      <div class="clock">
+        <span id="time"></span>
+        <span id="date"></span>
+      </div>
+      <h1>Unveiling the Dark Side</h1>
+      <a href="file:///C:/Users/ADMIN/Documents/HTML/My%20First%20Ecommerce%20Website/Explore%20bikes.html">Explore Sports Bikes</a>
+    </div>
+  </div>
+
+  
+
+
+  <script>
+    function updateTime() {
+  var currentTime = new Date();
+  var hours = currentTime.getHours();
+  var minutes = currentTime.getMinutes();
+  var seconds = currentTime.getSeconds();
+  var date = currentTime.toDateString();
+
+  // Pad the hours, minutes, and seconds with leading zeros if needed
+  hours = (hours < 10 ? "0" : "") + hours;
+  minutes = (minutes < 10 ? "0" : "") + minutes;
+  seconds = (seconds < 10 ? "0" : "") + seconds;
+
+  // Set the time and date in the HTML elements
+  document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds;
+  document.getElementById("date").innerHTML = date;
+}
+
+// Call updateTime function every second
+setInterval(updateTime, 1000);
+
+  </script>
+</body>
+</html>

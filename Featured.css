@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300;1,600&display=swap');
+
+
+:root{
+  --border: 1rem solid rgba(0,0,0,.1);
+  --box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 2s linear;
+}
+
+
+html{
+  font-size: 62%;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 9%;
+}
+.header .logo{
+  font-size: 2.5rem;
+  color: #a60808;
+  font-weight: bold;
+}
+.header .logo span{
+  color: #191919;
+}
+.logo {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+
+.logo:hover span {
+  transform: rotateY(180deg); 
+}
+
+
+.logo span {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+
+.logo span:hover {
+  color: #a60808; 
+}
+.header .navbar a{
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: #191919;
+}
+.header {
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+.navbar a {
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+
+.navbar a:hover {
+  transform: scale(1.1); 
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #a60808;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #747674;
+}
+
+.heading{
+  padding-top: 10rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 200%;
+}
+.heading span{ 
+ color: #a60808;
+}
+.featured .featured-slider{
+  padding: 8rem;
+  padding-top: 10rem;
+}
+
+
+.featured .featured-slider .box{
+  text-align: center;
+  padding-bottom: 2rem;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  border-radius: .5rem;
+}
+.featured .featured-slider .box img{
+  height: 15rem;
+}
+
+
+.featured .featured-slider .box:hover img{
+  transform: scale(.9);
+}
+.featured .featured-slider .box h3{
+  font-size: 2.2rem;
+  color: #191919;
+}
+
+.featured .featured-slider .box .stars{
+  padding: 1rem 0;
+}
+
+.featured .featured-slider .box .stars i{
+  font-size: 1.7rem;
+  color: #a60808;
+}
+.featured .featured-slider .box .price{
+  font-size: 2.5rem;
+  color: #191919;
+}
+
+
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+
+.github-icon {
+  font-size: 24px;
+  color: white;
+}
+
+
+
+@media only screen and (max-width: 428px) {
+  /* Adjustments for iPhone 12 Pro or similar size */
+
+  /* Update the logo styles */
+  .logo {
+    font-size: 24px;
+  }
+
+  /* Update the navbar styles */
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .swiper-slide {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+  
+  .swiper-container.featured-slider.secondSlider {
+    margin-top: 40px;
+  }
+  
+  .swiper-pagination {
+    bottom: 10px;
+  }
+  
+  .footer-links {
+    text-align: center;
+  }
+  
+  .footer-distributed .footer-left {
+    margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-right {
+    margin-top: 20px;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 991px) {
+  .swiper-container.featured-slider {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+  .swiper-container.featured-slider {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* Common Styles */
+.swiper-container.featured-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  flex-basis: 50%;
+  margin-right: 20px;
+}
+
+.footer-distributed {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.github-icon {
+  color: #fff;
+  margin-right: 0;
+}
+
+.footer-left p {
+  margin-bottom: 0;
+}
+
+.footer-right a {
+  color: #fff;
+  margin-right: 10px;
+}
